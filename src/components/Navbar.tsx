@@ -24,6 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCvModal }) => {
     { label: 'Experience', href: '#experience' },
     { label: 'Research', href: '#research' },
     { label: 'Projects', href: '#projects' },
+    { label: 'Gallery', href: '#gallery' },
     { label: 'Credentials', href: '#credentials' },
   ];
 

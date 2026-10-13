@@ -6,6 +6,7 @@ import { AboutSection } from './components/AboutSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { PublicationsSection } from './components/PublicationsSection';
 import { ProjectsSection } from './components/ProjectsSection';
+import { FieldGallerySection } from './components/FieldGallerySection';
 import { SkillsSection } from './components/SkillsSection';
 import { CredentialsSection } from './components/CredentialsSection';
 import { ContactSection } from './components/ContactSection';
@@ -40,6 +41,9 @@ function PortfolioApp() {
 
         {/* Featured Projects & Live Computational Simulators */}
         <ProjectsSection onSelectProject={(project) => setSelectedProject(project)} />
+
+        {/* Visual Engineering Practice & Fieldwork Gallery */}
+        <FieldGallerySection />
 
         {/* Technical Stack & Multi-Disciplinary Skills */}
         <SkillsSection />

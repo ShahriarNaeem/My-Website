@@ -30,6 +30,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCvModal }) => {
             <a href="#experience" className="hover:text-white transition-colors">Experience</a>
             <a href="#research" className="hover:text-white transition-colors">Research</a>
             <a href="#projects" className="hover:text-white transition-colors">Projects</a>
+            <a href="#gallery" className="hover:text-white transition-colors">Gallery</a>
             <a href="#credentials" className="hover:text-white transition-colors">Credentials</a>
             <button
               onClick={onOpenCvModal}

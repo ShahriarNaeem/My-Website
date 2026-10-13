@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown, Mail, Linkedin, ExternalLink, Download, ShieldCheck, MapPin, Sparkles } from 'lucide-react';
 import { PERSONAL_INFO, HIGHLIGHTS_METRICS } from '../data/portfolioData';
+import heroPortrait from '../assets/images/regenerated_image_1791820588033.png';
 
 interface HeroProps {
   onOpenCvModal: () => void;
@@ -113,7 +114,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal }) => {
               {/* Image Frame with graceful fallback */}
               <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
                 <img
-                  src="/src/assets/images/regenerated_image_1791820588033.png"
+                  src={heroPortrait}
                   alt="Engr. Md Shahriar Rahman Naeem Patwary portrait"
                   className="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-[1.02]"
                   referrerPolicy="no-referrer"

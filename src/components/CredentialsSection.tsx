@@ -13,10 +13,10 @@ export const CredentialsSection: React.FC = () => {
             Professional Endorsement & Continuous Learning
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Certifications, Global Engagement & Professional References
+            Professional Certifications & Community Leadership
           </h2>
           <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 mt-2">
-            Continuous development with international engineering bodies, Six Sigma, and verified academic references.
+            Continuous development with international engineering bodies, Six Sigma, and civic sustainability initiatives.
           </p>
         </div>
 
@@ -85,62 +85,6 @@ export const CredentialsSection: React.FC = () => {
             </div>
           </div>
 
-        </div>
-
-        {/* Professional & Academic References */}
-        <div className="mt-16 pt-12 border-t border-slate-200 dark:border-slate-800">
-          <div className="max-w-2xl mb-8">
-            <div className="text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-1">
-              Endorsement & Verification
-            </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
-              Professional & Academic References
-            </h3>
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-1">
-              Referees available to attest to project economics rigor, structural design competencies, and academic integrity.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {REFERENCES.map((ref) => (
-              <div
-                key={ref.name}
-                className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200/90 dark:border-slate-800 shadow-2xs flex flex-col justify-between"
-              >
-                <div>
-                  <div className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 flex items-center justify-center font-bold text-sm mb-3">
-                    {ref.name.split(' ').slice(-1)[0][0]}
-                  </div>
-                  <h4 className="text-sm font-bold text-slate-900 dark:text-white">
-                    {ref.name}
-                  </h4>
-                  <p className="text-xs text-blue-700 dark:text-blue-400 font-semibold mt-0.5">
-                    {ref.designation}
-                  </p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                    {ref.organization}
-                  </p>
-                </div>
-
-                <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 space-y-1.5 text-xs">
-                  <a
-                    href={`mailto:${ref.email}`}
-                    className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
-                  >
-                    <Mail className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-                    <span className="truncate">{ref.email}</span>
-                  </a>
-                  <a
-                    href={`tel:${ref.phone}`}
-                    className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
-                  >
-                    <Phone className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-                    <span>{ref.phone}</span>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
       </div>

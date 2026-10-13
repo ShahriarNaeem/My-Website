@@ -1,3 +1,8 @@
+import no2AnalysisImg from '../assets/images/geospatial_no2_analysis_1791819160686.jpg';
+import trafficMlImg from '../assets/images/traffic_flow_ml_1791819177355.jpg';
+import bimStructuralImg from '../assets/images/bim_structural_model_1791822712038.jpg';
+import dmrtMetroImg from '../assets/images/regenerated_image_1791822167612.png';
+
 export interface Publication {
   id: string;
   title: string;
@@ -301,7 +306,7 @@ export const PROJECTS: Project[] = [
     subtitle: "Sentinel-5P Satellite Remote Sensing & Ground-Station Synthesis",
     period: "2019 – 2024",
     category: "Geospatial & Remote Sensing",
-    image: "/src/assets/images/geospatial_no2_analysis_1791819160686.jpg",
+    image: no2AnalysisImg,
     summary: "Comprehensive spatio-temporal investigation of tropospheric Nitrogen Dioxide (NO2) column density across the Dhaka metropolitan delta over 72 months (6 years), integrating Google Earth Engine, Sentinel-5P TROPOMI satellite imagery, ground-based CAMS air quality observations, ArcGIS Pro cartography, and Python data automation.",
     methodology: [
       "Acquired Sentinel-5P TROPOMI level-3 satellite raster datasets over Dhaka division coordinates (2019–2024)",
@@ -329,7 +334,7 @@ export const PROJECTS: Project[] = [
     subtitle: "Predictive Urban Mobility Analytics via Scikit-Learn & XGBoost",
     period: "2012 – 2018 Data Baseline",
     category: "Machine Learning & Transit",
-    image: "/src/assets/images/traffic_flow_ml_1791819177355.jpg",
+    image: trafficMlImg,
     summary: "Predictive machine learning framework analyzing urban traffic congestion patterns, road user behavior, and accident severity factors along high-density metropolitan corridors (Westbound I-94), integrating adverse meteorological features, precipitation, and federal holidays.",
     methodology: [
       "Ingested multi-year Minnesota DOT hourly traffic volume datasets with localized NOAA weather feeds",
@@ -357,7 +362,7 @@ export const PROJECTS: Project[] = [
     subtitle: "LOD 350–400 Parametric Modeling, Clash Detection & BNBC-20 Analysis",
     period: "2021 – 2023",
     category: "BIM & Structural",
-    image: "/src/assets/images/bim_structural_model_1791822712038.jpg",
+    image: bimStructuralImg,
     summary: "Building Information Modeling (BIM) via Autodesk Revit and Navisworks Manage for complex elevated transit infrastructure and multi-story concrete/steel building structures. Encompasses Scan-to-BIM point cloud integration via Autodesk ReCap, finite element structural analysis (ETABS, SAFE, Geo5) compliant with BNBC-20 standards, structural steel detailing in Tekla, and parametric Quantity Takeoff (QTO).",
     methodology: [
       "Modeled high-detail 3D architectural and structural systems in Autodesk Revit with custom parametric family libraries",
@@ -387,7 +392,7 @@ export const PROJECTS: Project[] = [
     subtitle: "Contractual Management, BOQ & Cash Flow Forecasting",
     period: "2023 – 2026",
     category: "Infrastructure & Cost Engineering",
-    image: "/src/assets/images/regenerated_image_1791822167612.png",
+    image: dmrtMetroImg,
     summary: "Project economics and quantity surveying for CP-03 & CP-04 of the Dhaka Mass Rapid Transit Line-6, spanning elevated prestressed concrete viaduct segments and modern passenger stations under FIDIC conditions.",
     methodology: [
       "Formulated detailed itemized Bills of Quantities (BOQ) with comprehensive rate analysis",
