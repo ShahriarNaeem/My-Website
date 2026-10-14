@@ -105,7 +105,7 @@ export const EDUCATION_LIST: EducationItem[] = [
     institution: "Milestone College",
     location: "Dhaka, Bangladesh",
     period: "2014 – 2016",
-    grade: "GPA: 5.00 / 5.00 (Golden A+)",
+    grade: "GPA: 5.00 / 5.00 (A+)",
     thesisOrFocus: "Science Group with Physics, Chemistry, Higher Mathematics"
   },
   {
@@ -113,7 +113,7 @@ export const EDUCATION_LIST: EducationItem[] = [
     institution: "Mozadded E Alfesany Academy",
     location: "Rangamati, Chittagong, Bangladesh",
     period: "2013 – 2014",
-    grade: "GPA: 5.00 / 5.00 (Golden A+)",
+    grade: "GPA: 5.00 / 5.00 (A+)",
     thesisOrFocus: "Science Group"
   }
 ];

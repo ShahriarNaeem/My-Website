@@ -41,10 +41,10 @@ export const ContactSection: React.FC = () => {
             Inquiries & Collaboration
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Let's Discuss Infrastructure Projects or Research Initiatives
+            Let's Discuss Infrastructure, Climate Change, ESG, Sustainability, Investment & Finance
           </h2>
           <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 mt-2">
-            Available for cost engineering consultancy, environmental impact assessments, data science collaborations, and graduate research opportunities.
+            Available for infrastructure projects, climate change solutions, ESG advisory, sustainability investment & finance discussions, environmental impact assessments, and research collaboration.
           </p>
         </div>
 
@@ -224,6 +224,13 @@ export const ContactSection: React.FC = () => {
                     className="w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
                   >
                     <option value="Infrastructure & Research Collaboration">Infrastructure & Research Collaboration</option>
+                    <option value="Climate Change">Climate Change</option>
+                    <option value="Carbon Capture">Carbon Capture</option>
+                    <option value="Air Pollution">Air Pollution</option>
+                    <option value="Mitigation">Mitigation</option>
+                    <option value="Sustainability">Sustainability</option>
+                    <option value="Finance & Investment for Sustainability">Finance & Investment for Sustainability</option>
+                    <option value="ESG">ESG</option>
                     <option value="Quantity Surveying & Cost Estimation Consulting">Quantity Surveying & Cost Estimation Consulting</option>
                     <option value="Environmental Remote Sensing / Air Quality">Environmental Remote Sensing / Air Quality</option>
                     <option value="Machine Learning & Traffic Engineering">Machine Learning & Traffic Engineering</option>
