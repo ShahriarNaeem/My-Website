@@ -106,7 +106,7 @@ export const PublicationsSection: React.FC = () => {
 
                 {/* Expandable Key Highlights */}
                 {isExpanded && (
-                  <div className="mt-4 pt-4 border-t border-slate-200/60 dark:border-slate-800 bg-white/70 dark:bg-slate-850 p-4 rounded-xl space-y-2">
+                  <div className="mt-4 pt-4 border-t border-slate-200/60 dark:border-slate-800 bg-white dark:bg-slate-950 p-4 rounded-xl space-y-2 border border-slate-200/70 dark:border-slate-800">
                     <div className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">
                       Key Findings & Empirical Takeaways
                     </div>

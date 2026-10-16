@@ -214,7 +214,7 @@ export const TrafficPredictorWidget: React.FC = () => {
         </div>
 
         {/* Prediction Results Gauge Column */}
-        <div className="lg:col-span-6 bg-slate-50/80 dark:bg-slate-850 rounded-xl p-4 sm:p-5 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+        <div className="lg:col-span-6 bg-slate-50/80 dark:bg-slate-900 rounded-xl p-4 sm:p-5 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between mb-3">
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">

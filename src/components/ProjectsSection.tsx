@@ -80,7 +80,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                   className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all ${
                     isSelected
                       ? 'bg-blue-600 text-white shadow-2xs font-semibold'
-                      : 'bg-white dark:bg-slate-850 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200/80 dark:border-slate-800'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200/80 dark:border-slate-700'
                   }`}
                 >
                   {cat}
@@ -165,9 +165,9 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                     {project.metrics && (
                       <div className="grid grid-cols-3 gap-2 mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-center">
                         {project.metrics.map((m) => (
-                          <div key={m.label} className="bg-slate-50 dark:bg-slate-850 p-2 rounded-lg border border-slate-100 dark:border-slate-800">
-                            <div className="text-[10px] text-slate-400 font-medium truncate">{m.label}</div>
-                            <div className="text-xs font-bold text-slate-800 dark:text-slate-200 font-mono tabular-nums truncate mt-0.5">{m.value}</div>
+                          <div key={m.label} className="bg-white dark:bg-white p-2 rounded-lg border border-slate-200 dark:border-slate-200 shadow-2xs">
+                            <div className="text-[10px] text-slate-500 dark:text-slate-500 font-medium truncate">{m.label}</div>
+                            <div className="text-xs font-bold text-slate-900 dark:text-slate-900 font-mono tabular-nums truncate mt-0.5">{m.value}</div>
                           </div>
                         ))}
                       </div>

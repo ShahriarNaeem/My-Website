@@ -59,13 +59,13 @@ export const ContactSection: React.FC = () => {
               </h3>
 
               {/* Email */}
-              <div className="flex items-start justify-between gap-3 p-3 bg-white dark:bg-slate-850 rounded-xl border border-slate-200/80 dark:border-slate-800">
+              <div className="flex items-start justify-between gap-3 p-3 bg-white dark:bg-slate-950 rounded-xl border border-slate-200/80 dark:border-slate-800">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/80 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Email Address</div>
+                    <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">Email Address</div>
                     <a
                       href={`mailto:${PERSONAL_INFO.email}`}
                       className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-400 break-all"
@@ -84,13 +84,13 @@ export const ContactSection: React.FC = () => {
               </div>
 
               {/* Phone & WhatsApp */}
-              <div className="flex items-start justify-between gap-3 p-3 bg-white dark:bg-slate-850 rounded-xl border border-slate-200/80 dark:border-slate-800">
+              <div className="flex items-start justify-between gap-3 p-3 bg-white dark:bg-slate-950 rounded-xl border border-slate-200/80 dark:border-slate-800">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Phone & WhatsApp</div>
+                    <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">Phone & WhatsApp</div>
                     <a
                       href={`https://wa.me/${PERSONAL_INFO.phone.replace(/[^0-9]/g, '')}`}
                       target="_blank"
@@ -111,12 +111,12 @@ export const ContactSection: React.FC = () => {
               </div>
 
               {/* Location */}
-              <div className="flex items-start gap-3 p-3 bg-white dark:bg-slate-850 rounded-xl border border-slate-200/80 dark:border-slate-800">
+              <div className="flex items-start gap-3 p-3 bg-white dark:bg-slate-950 rounded-xl border border-slate-200/80 dark:border-slate-800">
                 <div className="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 mt-0.5">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Current Location</div>
+                  <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">Current Location</div>
                   <div className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
                     {PERSONAL_INFO.location}
                   </div>
@@ -199,7 +199,7 @@ export const ContactSection: React.FC = () => {
                       value={formState.name}
                       onChange={(e) => setFormState({ ...formState, name: e.target.value })}
                       placeholder="e.g. Dr. Jennifer Smith"
-                      className="w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
+                      className="w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
 
@@ -211,30 +211,30 @@ export const ContactSection: React.FC = () => {
                       value={formState.email}
                       onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                       placeholder="jennifer@organization.org"
-                      className="w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
+                      className="w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1">Subject / Area of Interest</label>
+                    <label className="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1">Subject / Area of Interest</label>
                   <select
                     value={formState.subject}
                     onChange={(e) => setFormState({ ...formState, subject: e.target.value })}
                     className="w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
                   >
-                    <option value="Infrastructure & Research Collaboration">Infrastructure & Research Collaboration</option>
-                    <option value="Climate Change">Climate Change</option>
-                    <option value="Carbon Capture">Carbon Capture</option>
-                    <option value="Air Pollution">Air Pollution</option>
-                    <option value="Mitigation">Mitigation</option>
-                    <option value="Sustainability">Sustainability</option>
-                    <option value="Finance & Investment for Sustainability">Finance & Investment for Sustainability</option>
-                    <option value="ESG">ESG</option>
-                    <option value="Quantity Surveying & Cost Estimation Consulting">Quantity Surveying & Cost Estimation Consulting</option>
-                    <option value="Environmental Remote Sensing / Air Quality">Environmental Remote Sensing / Air Quality</option>
-                    <option value="Machine Learning & Traffic Engineering">Machine Learning & Traffic Engineering</option>
-                    <option value="Academic or Graduate Research Inquiry">Academic or Graduate Research Inquiry</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Infrastructure & Research Collaboration">Infrastructure & Research Collaboration</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Climate Change">Climate Change</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Carbon Capture">Carbon Capture</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Air Pollution">Air Pollution</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Mitigation">Mitigation</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Sustainability">Sustainability</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Finance & Investment for Sustainability">Finance & Investment for Sustainability</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="ESG">ESG</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Quantity Surveying & Cost Estimation Consulting">Quantity Surveying & Cost Estimation Consulting</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Environmental Remote Sensing / Air Quality">Environmental Remote Sensing / Air Quality</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Machine Learning & Traffic Engineering">Machine Learning & Traffic Engineering</option>
+                    <option className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white" value="Academic or Graduate Research Inquiry">Academic or Graduate Research Inquiry</option>
                   </select>
                 </div>
 
@@ -246,7 +246,7 @@ export const ContactSection: React.FC = () => {
                     value={formState.message}
                     onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                     placeholder="Describe your project, research scope, or inquiry..."
-                    className="w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
                   />
                 </div>
 
